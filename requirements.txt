@@ -1,0 +1,33 @@
+# Dependências funcionais para Vial GUI - Step 1
+# Versões testadas e compatíveis com Python 3.9
+
+# Core dependencies essenciais
+altgraph==0.17
+future==0.18.2
+
+# HID API - mantendo versão original do repositório
+git+https://github.com/vial-kb/cython-hidapi@fa31fd46e709ac4adba80bd516b1290dd56f43e9#egg=hidapi
+
+# Keyboard library
+keyboard==0.13.5
+
+# Build tools
+macholib==1.14
+pefile==2019.4.18
+PyInstaller==3.4
+
+# GUI Framework - usando versão mais recente compatível
+PyQt5==5.15.11
+
+# SimpleEval - usando versão mais recente que não tem problema com use_2to3
+simpleeval>=1.0.0
+
+# SIP - versão compatível com PyQt5
+sip==6.12.0
+
+# SSL certificates
+certifi>=2021.0.0
+
+# Platform specific dependencies
+# pywin32 apenas para Windows
+pywin32==303; sys_platform == 'win32'
